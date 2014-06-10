@@ -13,6 +13,7 @@ alias grep='grep --color=auto'
 # Maven
 alias mvnci="mvn clean install"
 alias int="mvnci -Pintegrationtest"
+alias mvnnotests="mvn clean install -DskipTests -ff -q"
 
 ##############
 # Git
