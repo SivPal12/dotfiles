@@ -10,6 +10,8 @@ alias l="ls -cf"
 
 alias grep='grep --color=auto'
 
+bind 'set completion-ignore-case on'
+
 # Maven
 alias mvnci="mvn clean install"
 alias int="mvnci -Pintegrationtest"
