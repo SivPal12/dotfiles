@@ -15,7 +15,7 @@ bind 'set completion-ignore-case on'
 # Maven
 alias mvnci="mvn clean install"
 alias int="mvnci -Pintegrationtest"
-alias mvnnotests="mvn clean install -DskipTests -ff -q"
+alias mvnnotests="mvn clean install -DskipTests"
 
 ##############
 # Git
