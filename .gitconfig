@@ -11,5 +11,5 @@
 [push]
 	default = simple
 [alias]
-    logx = log --all --graph --decorate=short --pretty=format:'%C(yellow bold)%h%C(white)% an%C(auto): (%ar)%+d'
+    logx = log --all --graph --decorate=short --pretty=format:'%C(auto)%h% an: (%ar)%+d'
     co = checkout
