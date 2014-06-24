@@ -1,0 +1,15 @@
+[core]
+	autocrlf = true
+	editor = nano
+[color]
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = true
+[push]
+	default = simple
+[alias]
+    logx = log --all --graph --decorate=short --pretty=format:'%C(yellow bold)%h%C(white)% an%C(auto): (%ar)%+d'
+    co = checkout
