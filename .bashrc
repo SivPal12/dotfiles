@@ -17,13 +17,15 @@ alias mvnci="mvn clean install"
 alias int="mvnci -Pintegrationtest"
 alias mvnnotests="mvn clean install -DskipTests"
 
+## History
+HISTCONTROL=ignoreboth:erasedups
+HISTFILESIZE=4096
+HISTSIZE=4096
+shopt -s histappend
+
 ##############
 # Git
 ##############
-# don't put duplicate lines or lines starting with space in the history.
-# See bash(1) for more options
-HISTCONTROL=ignoreboth
-
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUPSTREAM="auto"
 GIT_PS1_SHOWCOLORHINTS=1
