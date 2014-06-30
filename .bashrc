@@ -35,3 +35,9 @@ PS1_OLD=${PS1}
 # Custom bash prompt via kirsle.net/wizards/ps1.html
 export PS1="\! \[$(tput setaf 6)\]\t \[$(tput setaf 3)\]\u \[$(tput setaf 2)\]\w\[\033[0m\]\$(__git_ps1)\n$ \[$(tput sgr0)\]"
 #export PS1="\$(__git_ps1)\n$ "
+
+
+function uptodate {
+	git fetch ;
+	git branch -v | grep "\[.* [[:digit:]]\]";
+}
