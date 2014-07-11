@@ -43,3 +43,5 @@ function utd {
 	git fetch ;
 	git branch -v | grep "\[.* [[:digit:]]\]";
 }
+
+alias pomversion="cat pom.xml | grep -E '<version>(.+?)<\/version>' -m1"
