@@ -1,5 +1,5 @@
 [core]
-	autocrlf = true
+	autocrlf = input
 	editor = nano
 [color]
 [color]
