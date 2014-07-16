@@ -11,7 +11,6 @@ alias grep='grep --color=auto'
 bind 'set completion-ignore-case on'
 
 ## History
-HISTCONTROL=ignoreboth:erasedups
 HISTFILESIZE=4096
 HISTSIZE=4096
 shopt -s histappend
