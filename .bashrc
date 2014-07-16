@@ -22,26 +22,3 @@ HISTCONTROL=ignoreboth:erasedups
 HISTFILESIZE=4096
 HISTSIZE=4096
 shopt -s histappend
-
-##############
-# Git
-##############
-GIT_PS1_SHOWDIRTYSTATE=1
-GIT_PS1_SHOWUPSTREAM="auto"
-GIT_PS1_SHOWCOLORHINTS=1
-
-# Change prompt
-PS1_OLD=${PS1}
-#export PS1='\[\033[1;34m\]\!\[\033[0m\] \[\033[1;35m\]\u\[\033[0m\]:\[\033[1;35m\]\W\[\033[0m\]\[\033[1;92m\]$(__git_ps1 "(%s)")\[\033[0m\]$ '
-
-# Custom bash prompt via kirsle.net/wizards/ps1.html
-export PS1="\n\! \[$(tput setaf 6)\]\t \[$(tput setaf 3)\]\u \[$(tput setaf 2)\]\w\[\033[0m\]\$(__git_ps1)\n$ \[$(tput sgr0)\]"
-#export PS1="\$(__git_ps1)\n$ "
-
-# Up to date
-function utd {
-	git fetch ;
-	git branch -v | grep "\[.* [[:digit:]]\]";
-}
-
-alias pomversion="cat pom.xml | grep -E '<version>(.+?)<\/version>' -m1"
