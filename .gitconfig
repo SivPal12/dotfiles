@@ -11,8 +11,9 @@
 [push]
 	default = simple
 [alias]
-    logx = log --all --graph --decorate=short --pretty=format:'%C(auto)%h% an (%ar):% s%n%-d'
-    co = checkout
+	logx = log --all --graph --decorate=short --pretty=format:'%C(auto)%h% an (%ar):% s%n%-d'
+	co = checkout
+	staged = diff --staged
 
 ### Include file:
 # [include]
