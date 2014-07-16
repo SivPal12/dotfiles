@@ -13,3 +13,7 @@
 [alias]
     logx = log --all --graph --decorate=short --pretty=format:'%C(auto)%h% an (%ar):% s%n%-d'
     co = checkout
+
+### Include file:
+# [include]
+#	path = ~/dotfiles/.gitconfig
