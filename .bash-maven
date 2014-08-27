@@ -1,4 +1,4 @@
 alias mvnci="mvn clean install"
 alias int="mvnci -Pintegrationtest"
 alias mvnnotests="mvn clean install -DskipTests"
-alias mvnquickstart="mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstar"
+alias mvnquickstart="mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart"
