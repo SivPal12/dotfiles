@@ -19,6 +19,7 @@
       echo \"\n.classpath\n.project\n\" >> .gitignore && \
       git add .gitignore && \
       git commit -m\"[AUTO] Added gitignore\"
+  diffx = diff --word-diff=color
 
 ### Include file:
 # [include]
