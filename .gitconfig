@@ -2,7 +2,6 @@
 	autocrlf = input
 	editor = nano
 [color]
-[color]
 	ui = auto
 	diff = auto
 	status = auto
@@ -14,6 +13,11 @@
 	logx = log --all --graph --decorate=short --pretty=format:'%w(83)%C(auto)%h% an (%ar):% s%n%-d'
 	co = checkout
 	staged = diff --staged
+	initignore = !git init && \
+      wget -O .gitignore "https://www.gitignore.io/api/java,eclipse,intellij,c,c++,linux,windows,cmake,maven" && \
+      echo \"\n.classpath\n.project\n\" >> .gitignore && \
+      git add .gitignore && \
+      git commit -m\"[AUTO] Added gitignore\"
 
 ### Include file:
 # [include]
