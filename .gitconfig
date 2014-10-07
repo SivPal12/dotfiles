@@ -1,19 +1,19 @@
 [core]
-	autocrlf = input
-	editor = nano
+  autocrlf = input
+  editor = nano
 [color]
-	ui = auto
-	diff = auto
-	status = auto
-	branch = auto
-	interactive = true
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = true
 [push]
-	default = simple
+  default = simple
 [alias]
-	logx = log --all --graph --decorate=short --pretty=format:'%w(83)%C(auto)%h% an (%ar):% s%n%-d'
-	co = checkout
-	staged = diff --staged
-	initignore = !git init && \
+  logx = log --all --graph --decorate=short --pretty=format:'%w(83)%C(auto)%h% an (%ar):% s%n%-d'
+  co = checkout
+  staged = diff --staged
+  initignore = !git init && \
       wget -O .gitignore "https://www.gitignore.io/api/java,eclipse,intellij,c,c++,linux,windows,cmake,maven" && \
       echo \"\n.classpath\n.project\n\" >> .gitignore && \
       git add .gitignore && \
@@ -21,4 +21,4 @@
 
 ### Include file:
 # [include]
-#	path = ~/dotfiles/.gitconfig
+# path = ~/dotfiles/.gitconfig
