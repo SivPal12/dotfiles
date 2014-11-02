@@ -6,6 +6,7 @@ alias ll="ls -alF"
 alias la="ls -A"
 alias l="ls -cf"
 alias grep='grep --color=auto'
+alias t="gnome-terminal ." ## New terminal in current dir
 
 ## Bash autocomplete ignore case
 bind 'set completion-ignore-case on'
