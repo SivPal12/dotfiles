@@ -20,6 +20,7 @@
       git add .gitignore && \
       git commit -m\"[AUTO] Added gitignore\"
   diffx = diff --word-diff=color
+  whatchangedx = whatchanged --oneline --graph
 
 ### Include file:
 # [include]
