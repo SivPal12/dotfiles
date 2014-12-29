@@ -2,7 +2,7 @@
 alias game-over=exit
 alias snakkes=exit
 alias ls="ls --color=auto"
-alias ll="ls -alF"
+alias ll="ls -alFh"
 alias la="ls -A"
 alias l="ls -cf"
 alias grep='grep --color=auto'
