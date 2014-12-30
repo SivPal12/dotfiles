@@ -1,3 +1,6 @@
+## Vars
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
 ## Aliases
 alias game-over=exit
 alias snakkes=exit
@@ -15,3 +18,6 @@ bind 'set completion-ignore-case on'
 HISTFILESIZE=4096
 HISTSIZE=4096
 shopt -s histappend
+
+## Copy files
+cp $DIR/.nanorc ~

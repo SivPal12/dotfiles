@@ -1,0 +1,7 @@
+set autoindent
+set tabsize "2"
+set tabstospaces
+set const
+set morespace
+set undo
+set softwrap
