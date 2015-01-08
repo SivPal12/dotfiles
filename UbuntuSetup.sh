@@ -31,8 +31,8 @@ else
         echo "~/.bashrc has link to .bash-maven"
 fi
 
-if ! grep -q "cp "$DIR"/.nanorc" ~/.bashrc; then
-        printf "cp "$DIR"/.nanorc\n" >> ~/.bashrc
+if ! grep -q "cp "$DIR"/.nanorc ~/" ~/.bashrc; then
+        printf "cp "$DIR"/.nanorc ~/\n" >> ~/.bashrc
         echo "Added nanorc copy to ~/.bashcr"
 else
         echo "~/.bashrc has copy nanorc command"
