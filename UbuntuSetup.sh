@@ -9,4 +9,26 @@ if ! grep -q "path = "$DIR"/.gitconfig" ~/.gitconfig; then
 else
 	echo "Gitconfig looks good"
 fi
+
+if ! grep -q ". "$DIR"/.bashrc" ~/.bashrc; then
+        printf ". "$DIR"/.bashrc\n" >> ~/.bashrc
+        echo "Added .bashcr to ~/.bashrc"
+else
+        echo "~/.bashrc has link to .bashrc"
+fi
+
+if ! grep -q ". "$DIR"/.bash-git" ~/.bashrc; then
+        printf ". "$DIR"/.bash-git\n" >> ~/.bashrc
+        echo "Added .bash-git to ~/.bashrc"
+else
+        echo "~/.bashrc has link to .bash-git"
+fi
+
+if ! grep -q ". "$DIR"/.bash-maven" ~/.bashrc; then
+        printf ". "$DIR"/.bash-maven\n" >> ~/.bashrc
+        echo "Added .bashcr to ~/.bash-maven"
+else
+        echo "~/.bashrc has link to .bash-maven"
+fi
+
 echo "Finish"
