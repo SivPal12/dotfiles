@@ -1,6 +1,5 @@
 [core]
-  autocrlf = input
-  editor = nano
+  autocrlf = true
   page = less -r
 [color]
   ui = auto
