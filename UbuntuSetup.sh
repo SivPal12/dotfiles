@@ -38,4 +38,6 @@ else
         echo "~/.bashrc has copy nanorc command"
 fi
 
+. ~/.bashrc
+
 echo "Finish"
