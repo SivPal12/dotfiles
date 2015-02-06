@@ -12,7 +12,7 @@ export PROMPT_COMMAND='__git_ps1 "\n\! \e[0;36m\t \e[0;32m\u \e[0;33m\w\[\033[0m
 # Up to date
 function utd {
 	git fetch ;
-	git branch -v | grep "\[.* [[:digit:]]\]";
+	git branch -v | grep "\[.* [[:digit:]]*\]";
 }
 
 # pom.xml version
