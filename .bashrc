@@ -21,3 +21,6 @@ shopt -s histappend
 
 ## Copy files
 cp $DIR/.nanorc ~
+
+## Set terminal tab with equivalent to 4 chars
+tabs -4
