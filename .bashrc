@@ -15,7 +15,6 @@ alias t="gnome-terminal ." ## New terminal in current dir
 bind 'set completion-ignore-case on'
 
 ## History
-HISTCONTROL=ignorespace
 HISTFILESIZE=4096
 HISTSIZE=4096
 shopt -s histappend
