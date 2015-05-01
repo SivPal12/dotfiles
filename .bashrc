@@ -22,6 +22,3 @@ shopt -s histappend
 
 ## Copy files
 cp $DIR/.nanorc ~
-
-## Export history on every command
-export PROMPT_COMMAND="history -a; history -n;"
