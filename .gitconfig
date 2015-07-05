@@ -15,7 +15,7 @@
   co = checkout
   staged = diff --staged
   initignore = !git init && \
-      wget -O .gitignore "https://www.gitignore.io/api/java,eclipse,intellij,c,c++,linux,windows,cmake,maven" && \
+      wget -O .gitignore "https://www.gitignore.io/api/java,eclipse,intellij,c,c++,linux,windows,cmake,maven,rails,ruby" && \
       echo \"\n.classpath\n.project\n\" >> .gitignore && \
       git add .gitignore && \
       git commit -m\"[AUTO] Added gitignore\"
