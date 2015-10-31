@@ -5,7 +5,15 @@ GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWUPSTREAM="auto verbose"
 
 # Change PS1
-export PROMPT_COMMAND='__git_ps1 "\n\! \[$(tput setaf 6)\]\t \[$(tput setaf 3)\]\u \[$(tput setaf 2)\]\w\[\033[0m\]" "\n$ \[$(tput sgr0)\]"'
+# See:
+# https://wiki.archlinux.org/index.php/Color_Bash_Prompt
+
+EXIT_STATUS="\$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\$?\"; else echo \"\[\033[01;31m\]\$?\"; fi) \[\033[00m\]"
+CURRENT_TIME="\[$(tput setaf 6)\]\t"
+USER_NAME="\[$(tput setaf 3)\]\u"
+WORKING_DIR="\[$(tput setaf 2)\]\w"
+
+export PROMPT_COMMAND='__git_ps1 "\n$EXIT_STATUS $CURRENT_TIME $USER_NAME $WORKING_DIR\[\033[0m\]" "\n$ \[$(tput sgr0)\]"'
 
 # Up to date
 function utd {
