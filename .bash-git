@@ -8,7 +8,7 @@ GIT_PS1_SHOWUPSTREAM="auto verbose"
 # See:
 # https://wiki.archlinux.org/index.php/Color_Bash_Prompt
 
-EXIT_STATUS="\$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\$?\"; else echo \"\[\033[01;31m\]\$?\"; fi) \[\033[00m\]"
+EXIT_STATUS="\$(if [[ \$? == 0 ]]; then echo \"\[\033[01;32m\]\$?\"; else echo \"\[\033[01;31m\]\$?\"; fi)\[\033[00m\]"
 CURRENT_TIME="\[$(tput setaf 6)\]\t"
 USER_NAME="\[$(tput setaf 3)\]\u"
 WORKING_DIR="\[$(tput setaf 2)\]\w"
