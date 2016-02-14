@@ -24,6 +24,6 @@
   ahead = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
   addx = add -N .
 
-### Include file:
-# [include]
-# path = ~/dotfiles/.gitconfig
+[user]
+	email = palsivertsen@gmail.com
+	name = Pal Sivertsen
