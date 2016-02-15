@@ -23,6 +23,8 @@
   whatchangedx = whatchanged --oneline --graph
   ahead = log --branches --not --remotes --simplify-by-decoration --decorate --oneline
   addx = add -N .
+  s = status
+  p = add -p
 
 [user]
 	email = palsivertsen@gmail.com
