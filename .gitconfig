@@ -26,7 +26,6 @@
   s = status
   p = add -p
   append = commit --amend --no-edit
-  m = commit -m
 
 [user]
 	email = palsivertsen@gmail.com
