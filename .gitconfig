@@ -1,6 +1,6 @@
 [core]
   autocrlf = input
-  editor = nano
+  editor = vi
   pager = less -x4
 [color]
   ui = auto
