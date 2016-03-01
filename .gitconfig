@@ -26,6 +26,9 @@
   s = status
   p = add -p
   append = commit --amend --no-edit
+  prune-features = !git checkout develop && \
+    git pull && \
+    git branch --merged | grep feature/ | xargs -r git branch -d
 
 [user]
 	email = palsivertsen@gmail.com
