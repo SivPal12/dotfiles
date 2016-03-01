@@ -28,7 +28,9 @@
   append = commit --amend --no-edit
   prune-features = !git checkout develop && \
     git pull && \
-    git branch --merged | grep feature/ | xargs -r git branch -d
+    git branch --merged | grep feature/ | xargs -r git branch -d && \
+    echo "Remaining branches:" && \
+    git branch
 
 [user]
   email = palsivertsen@gmail.com
